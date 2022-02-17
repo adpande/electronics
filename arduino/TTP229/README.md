@@ -1,7 +1,8 @@
 ## All Credit goes to: https://itimewaste.blogspot.com/2014/12/arduino-code-for-ttp229-touch-16-button.html?showComment=1645100905934#c528859924059238124
 **I just made sure it is presered and commited the code file to git**
 
-Arduino Code for TTP229 16 Key Touch button
+### Arduino Code for TTP229 16 Key Touch button
+
 I could not find the arduino library code for TTP229 keys and hoping this will help others who have bought this item from ebay to be able to use the keyboard.
 
 The pin layout is clear enough that only 8 buttons were mapped to direct pin mapping. In order to use full 16 buttons, direct pin mapping is definitely not the way to go. So the serial clock and data line has to be used.
