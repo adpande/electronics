@@ -1,5 +1,5 @@
 ## All Credit goes to: https://itimewaste.blogspot.com/2014/12/arduino-code-for-ttp229-touch-16-button.html?showComment=1645100905934#c528859924059238124
-*** I just made sure it is presered and commited the code file to git ***
+**I just made sure it is presered and commited the code file to git**
 
 Arduino Code for TTP229 16 Key Touch button
 I could not find the arduino library code for TTP229 keys and hoping this will help others who have bought this item from ebay to be able to use the keyboard.
@@ -26,7 +26,7 @@ Also, the code takes a bit of time to read from the keyboard. So decided to keep
 
 On the other hand, calling GetButtonStatus will return the buttons pressed currently.
 
-*** In short, here is the instruction to get the keyboard working with Arduino ***
+**In short, here is the instruction to get the keyboard working with Arduino**
 1. Add a trace between 3&4 in header P1 (highlighted with yellow). This is the must if you want to use all 16 buttons. Refer to the picture above.
 2. Add a trace between 1&2 in header P1 and 7&8 in  header P2 (highlighted in Red). This is optional and needed only if you want to enable multi-key press at the same time. Refer to the picture above.
 3. Connect the VCC & GND from the keyboard to corresponding pin in arduino.
