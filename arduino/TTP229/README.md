@@ -11,6 +11,8 @@ From the captured waveform subdued the moment I realized that button is outputti
 
 Initially I was skeptical manufacturer will send a 16key keyboard configured to work as 8key keyboard. But after convincing myself that I have done enough reading, and a good enough dose of get it to work or burn it, I added a trace connecting pins (highlighted in Yellow) as shown in the picture.
 
+ ![Pic1](IMG_20141201_192455_1.jpg)
+
 
 
 Then tried the code and it seemed to work exactly as wanted. Emboldened by the success I added two more traces to support multi-key (highlighted in Red). That also worked perfectly. Interestingly, the pressed keys wont appear even if new key has been pressed. Only after the second key is released the first key is shown as pressed.
@@ -21,7 +23,7 @@ Also, the code takes a bit of time to read from the keyboard. So decided to keep
 
 On the other hand, calling GetButtonStatus will return the buttons pressed currently.
 
-In short, here is the instruction to get the keyboard working with Arduino
+**In short, here is the instruction to get the keyboard working with Arduino**
 1. Add a trace between 3&4 in header P1 (highlighted with yellow). This is the must if you want to use all 16 buttons. Refer to the picture above.
 2. Add a trace between 1&2 in header P1 and 7&8 in  header P2 (highlighted in Red). This is optional and needed only if you want to enable multi-key press at the same time. Refer to the picture above.
 3. Connect the VCC & GND from the keyboard to corresponding pin in arduino.
@@ -30,9 +32,13 @@ In short, here is the instruction to get the keyboard working with Arduino
 
 Here is how my connection looks like
 
+ ![Pic1](IMG_20141201_202847.jpg)
+
 
 
 You are good to go and should be able to see the output in the serial port. This is what I saw in my keyboard
+
+![Pic1](ScreenCapture.jpg)
 
 
 This is the output for pressing keys from 16 to 1. But when key 2 is pressed I pressed key 1, that is why you see Button Pressed : 2 followed by pressed 1 and then both these keys are released.
